@@ -11,7 +11,6 @@ using UnityEngine.SceneManagement;
 public class ObjectGrabHandler : MonoBehaviour
 {
     public Rigidbody rigidBody;
-    public GameObject canvas;
     public GameObject doneCanvas;
     public GameObject ray;
     private GameObject curser;
@@ -29,7 +28,6 @@ public class ObjectGrabHandler : MonoBehaviour
     {
         OVRInteraction = GameObject.Find("OVRInteraction");
         ray = GameObject.FindGameObjectWithTag("Ray");
-        canvas = GameObject.Find("Canvas");
         doneCanvas = GameObject.Find("DoneCanvas");
         rigidBody = gameObject.GetComponent<Rigidbody>();
         curser = GameObject.Find("Cursor");
@@ -47,7 +45,6 @@ public class ObjectGrabHandler : MonoBehaviour
     private IEnumerator LateStart()
     {
         yield return new WaitForSeconds(1);
-        canvas.SetActive(false);
         doneCanvas.SetActive(false);
         OVRInteraction.SetActive(false);
     }
@@ -75,10 +72,10 @@ public class ObjectGrabHandler : MonoBehaviour
             ray.SetActive(true);
             if(!isReleased)
             {
-                canvas.GetComponent<SaveSystem>().grabCounter++;
+                doneCanvas.GetComponent<SaveSystem>().grabCounter++;
                 isReleased = true;
             }
-            if (canvas.GetComponent<SaveSystem>().grabCounter >= 8)
+            if (doneCanvas.GetComponent<SaveSystem>().grabCounter >= 8)
             {
                 //canvas.SetActive(true);
                 doneCanvas.SetActive(true);

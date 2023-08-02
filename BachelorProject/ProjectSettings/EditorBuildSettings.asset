@@ -8,12 +8,15 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
-  - enabled: 1
+  - enabled: 0
     path: Assets/0 Scenes/Quest2.unity
     guid: 82e7854dac3f6fc4798a35804cb8e602
-  - enabled: 1
+  - enabled: 0
     path: Assets/0 Scenes/Triggermuscle.unity
     guid: 59c6b7d80b6f67a4e92a2165177c461f
+  - enabled: 1
+    path: Assets/0 Scenes/Pilot.unity
+    guid: 3856b2a85e7234b4cb14bef69157ccfc
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 74e0c46813a31e74089e1d35c83e38ed, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 9383a75135575d049bd24bf75be9d223, type: 2}

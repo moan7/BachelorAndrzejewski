@@ -353,14 +353,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fb34c1040a22cb4e9e6695b05d1d87a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentlyGrabbed: 0
-  canvas: {fileID: 0}
-  startPosition: {fileID: 0}
-  startRotation: {fileID: 0}
   rigidBody: {fileID: 0}
-  selected: 0
-  dropCounter: 0
+  canvas: {fileID: 0}
+  doneCanvas: {fileID: 0}
   ray: {fileID: 0}
+  currentlyGrabbed: 0
+  selected: 0
+  isReleased: 0
 --- !u!114 &8757208319117836391
 MonoBehaviour:
   m_ObjectHideFlags: 0
